@@ -1,0 +1,2 @@
+class MarvelHeroes
+end
