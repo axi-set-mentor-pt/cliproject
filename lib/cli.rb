@@ -1,6 +1,6 @@
 # another method with options
 # enter list to see all superheroes
-# press number for more details
+# press number for opinions XD 
 # press q to quit
 
 class MarvelHeroes::CLI
@@ -31,14 +31,15 @@ end
 def options
     input = nil
   while input != "q"
-    puts "Type the number of you favorite Character"
+    puts "Type the number of you favorite Character. If you love DC Comics, press 26, and if you want to quit, press q!".green
     input = gets.strip.downcase
-    if input == "13"
-      puts "Great Taste!"
-    elsif input == "2" 
-      puts  "Love her!"
+    if input == "26"
+      puts "In the ratings game, Marvel wins by a large margin: 66% of Marvel films are certified fresh compared to 54% of DC films.".redq
+
+    elsif input == "13"  
+     puts "OMG, same!! YOU HAVE GREAT TASTE!".blue
     elsif input != "q"
-      puts "Do Better. Try again".red
+      puts "Good Job! Marvel Heroes are always the Best!!".red
     end
   end
     
@@ -47,9 +48,9 @@ end
 def goodbye
   puts ""
   puts "-------------------------------------------------"
-  puts "           It's not about how much we lost. 
-                  It's about how much we have left.”
-                  ~ Tony Stark, Avengers: Endgame  "
+  puts "       It's not about how much we lost. 
+      It's about how much we have left.
+       ~ Tony Stark, Avengers: Endgame  "
   puts "-------------------------------------------------"
     
 
