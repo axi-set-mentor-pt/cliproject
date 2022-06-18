@@ -1,12 +1,11 @@
 class MarvelHeroes
 
-  attr_accessor :name, :info
+  attr_accessor :name
   
   @@all =[]
   
-  def initialize(name = nil, info = nil)
+  def initialize(name = nil )
     @name =name
-    @info = info
     @@all << self
   end
   
