@@ -35,8 +35,6 @@ def options
     input = gets.strip.downcase
     if input == "26"
       puts "In the ratings game, Marvel wins by a large margin: 66% of Marvel films are certified fresh compared to 54% of DC films.".red
-
-26
     elsif input == "13"  
      puts "OMG, same!! YOU HAVE GREAT TASTE!".blue
     elsif input != "q"
